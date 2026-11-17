@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 2017)
-Total output lines: 58
-
 # VisaWorld
 
 Двуязычный мобильный сайт визового агентства: русский `/`, казахский `/kk`, кабинет `/admin`.
@@ -34,7 +31,7 @@ Instagram @visaworld.kaz не отдал содержимое: исходная 
 
 Node.js 22.13+, npm, Git. В предоставленном checkout зависимости уже установлены. На новом компьютере: `npm ci`, затем `npm run dev`. Этот проект использует Vinext и Cloudflare Workers. Для локальной базы: `npm run build`, затем `node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_spotty_nocturne.sql`. Не повторяйте уже применённую миграцию. Для изменения схемы создавайте новые миграции через `npm run db:generate`.
 
-Секрет `ADMIN_EMAILS` задаётся в настройках среды Sites; несколько адресов перечисляются через запятую. После изменения переменных нужно переопубликовать сохранённую версию. Без настройки доступ закрыт…17 tokens truncated…одниках.
+Секрет `ADMIN_EMAILS` задаётся в настройках среды Sites; несколько адресов перечисляются через запятую. После изменения переменных нужно переопубликовать сохранённую версию. Без настройки доступ закрыт для всех. Не размещайте секреты в исходниках.
 
 ## Проверки
 
